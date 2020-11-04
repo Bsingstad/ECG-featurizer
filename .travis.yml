@@ -1,0 +1,12 @@
+sudo: false
+language: python
+python:
+  - "3.7"
+# command to install dependencies
+install:
+before_script:
+  - pip install tox-travis
+  - pip install coveralls
+# command to run tests
+script: tox
+after_success: coveralls
