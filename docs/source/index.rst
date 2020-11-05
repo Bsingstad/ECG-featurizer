@@ -6,11 +6,19 @@
 Welcome to ECG-featurizer's documentation!
 ==========================================
 
+
+Welcome to **ECG-featurizer**'s documentation. Here you can find information and learn about how to use the package, how to contribute and more
+
+
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
+   introduction
+   authors
+   installation
+   contributing
+   
 
 Indices and tables
 ==================
