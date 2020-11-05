@@ -13,6 +13,17 @@ class get_features:
 
 
     def featurizer(self, features , labels, directory, demographical_data):
+        """
+        Automatically derives features from ECG-files (only .dat files for now)
+        Args:
+            features (numpy array of str): an array of ECG-filenames in directory
+            labels (numpy array): an array of labels/diagnosis
+            directory (str): path to the features
+            demographical_data (DataFrame): A DataFrame containing feature name, age and gender
+
+        Returns:
+            features_out (DataFrame): A DataFrame with features for all ECG-records
+        """
 
         def _read_directory_data(ecg_file , directory):
             ecg_data, header_data =  wfdb.rdsamp(directory + ecg_file)
@@ -292,3 +303,6 @@ class get_features:
         print("labels for files not annotated:",  self.labels_for_manual_annotation)
 
         return self.features_out, 
+
+    def manual_annotation(self):
+        pass_hash = input("Enter md5 hash: ")
