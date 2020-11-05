@@ -1,6 +1,11 @@
 language: python
 python:
   - "3.6"
-  - "3.7"
-install: pip install tox-travis
-script: tox
+install:
+  - pip install pytest
+  - pip install pytest-cov
+  - pip install coveralls
+script:
+  - pytest --cov=YourModule/
+after_success:
+  - coveralls
