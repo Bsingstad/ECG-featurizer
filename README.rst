@@ -19,7 +19,7 @@ A python package for deriving features from ECGs
 
 
 
-.. image:: https://pypip.in/d/$REPO/badge.png
+.. image:: https://pypip.in/d/ECG-featurizer/badge.png
     :target: https://crate.io/ECG-featurizer/$REPO/
     :alt: Number of PyPI downloads
 
