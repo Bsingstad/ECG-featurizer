@@ -1,12 +1,19 @@
-sudo: false
 language: python
+
 python:
-  - "3.8.5"
-# command to install dependencies
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+
 install:
-before_script:
+  - pip install -r requirements/dev.txt
   - pip install tox-travis
-  - pip install coveralls
-# command to run tests
-script: tox
-after_success: coveralls
+
+script:
+  - tox
+  - coverage run --source icon_font_to_png -m py.test
+  - coverage report -m
+
+after_success:
+  - coveralls
