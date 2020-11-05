@@ -47,8 +47,6 @@ A python package for deriving features from ECGs
    :target: https://packagecontrol.io/packages/ECG-featurizer
 
 
-
-
 Code Example
 ------------------
 
