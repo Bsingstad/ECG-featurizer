@@ -1,5 +1,6 @@
 
 ECG-featurizer
+------------------
 
 A python package for deriving features from ECGs
 
@@ -33,3 +34,95 @@ A python package for deriving features from ECGs
 .. image:: http://www.repostatus.org/badges/latest/active.svg
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
+
+   
+   |Github all releases|
+.. |Github all releases| image:: https://img.shields.io/github/downloads/ECG-featurizer/StrapDown.js/total.svg
+   :target: https://GitHub.com/CG-featurizer/StrapDown.js/releases/)
+
+
+   |Package Control total downloads|
+
+.. |Package Control total downloads| image:: https://img.shields.io/packagecontrol/dt/ECG-featurizer.svg
+   :target: https://packagecontrol.io/packages/ECG-featurizer
+
+
+
+
+Code Example
+------------------
+
+.. code-block:: python
+
+    from ECG-featurizer import featurize as ef
+
+    # Make ECG-featurizer object
+    Feature_object =ef.get_features()
+
+    # Preprocess the data (filter, find peaks, etc.)
+    My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
+
+
+
+Installation
+-------------
+
+To install ECG-featurizer, run this command in your terminal:
+
+.. code-block::
+
+    pip install ECG-featurizer
+
+
+
+Contributing
+-------------
+
+|GPLv3 license|
+
+.. |GPLv3 license| image:: https://img.shields.io/badge/License-GPLv3-blue.svg
+   :target: http://perso.crans.org/besson/LICENSE.html
+
+
+
+
+Documentation
+----------------
+
+
+Tutorials
+^^^^^^^^^^
+
+-  `A tutorial will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
+
+
+
+Other examples
+^^^^^^^^^^
+
+-  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
+
+
+
+
+Citation
+---------
+
+
+
+
+Popularity
+---------------------
+
+.. image:: https://img.shields.io/pypi/dd/ECG-featurizer
+        :target: https://pypi.python.org/pypi/ECG-featurizer
+
+.. image:: https://img.shields.io/github/stars/ECG-featurizer/ECG-featurizer
+        :target: https://github.com/ECG-featurizer/ECG-featurizer/stargazers
+
+.. image:: https://img.shields.io/github/forks/ECG-featurizer/ECG-featurizer
+        :target: https://github.com/ECG-featurizer/ECG-featurizer/network
+
+
+
+
