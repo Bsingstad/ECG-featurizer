@@ -19,10 +19,3 @@ Welcome to **ECG-featurizer**'s documentation. Here you can find information and
    installation
    contributing
    
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
