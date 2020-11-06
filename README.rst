@@ -1,7 +1,7 @@
 *****
 ECG-featurizer
 *****
-.. image:: /docs/source/img/ECG-featurizer banner.png
+.. image:: /docs/source/img/ECG-featurizer_banner.png
 
 **A method to extract features from electrocardiographic recordings**
 
