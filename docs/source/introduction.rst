@@ -75,7 +75,7 @@ Input data:
     +---+---------+------------+-----------------+
     
     The strings in the *filename_hr* -column should be the same as the strings in the feature array.
-    In this example gender is OneHot encoded such that :math:`1 = ` female and :math:`1 = ` male
+    In this example gender is OneHot encoded such that :math: `1 = ` female and :math: `1 = ` male
  
 
 Output Features:
