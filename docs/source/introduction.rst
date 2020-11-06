@@ -1,12 +1,11 @@
 *****
 Introduction
 *****
-The purpose of this package is to make tabular data from ECG-recordings by calculating features. The package is built on WFDB [#]_ and NeuroKit2 [#]_. The package can be convenient when doing machine learning on ECG-data.
+The purpose of this package is to make tabular data from ECG-recordings by calculating features. The package is built on WFDB [WFDB]_ and NeuroKit2 [NeuroKit2]_. The package can be convenient when doing machine learning on ECG-data.
 
 Input data:
 ===========
-The following input data format is supported
-ECG recording = .dat-file
+**Supported input data:**
 
 +-------------------+---------------------------+
 | **Input data**    | **Supported file format** |
@@ -15,6 +14,7 @@ ECG recording = .dat-file
 +-------------------+---------------------------+
 | Patient meta data | .hea files                |
 +-------------------+---------------------------+
+
 
 
 Features:
@@ -252,7 +252,7 @@ The features that are calculated in present version is:
 References:
 ===========
 
-.. [#] WFDB: https://github.com/MIT-LCP/wfdb-python
-.. [#] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
+.. [WFDB] WFDB: https://github.com/MIT-LCP/wfdb-python
+.. [NeuroKit2] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
   Schölzel, C., & S H Chen, A. (2020). NeuroKit2: A Python Toolbox for Neurophysiological
   Signal Processing. Retrieved March 28, 2020, from https://github.com/neuropsychology/NeuroKit
