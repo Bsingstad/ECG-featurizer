@@ -2,5 +2,5 @@ Contributing
 ==========================================
 
 
-.. hint::
-   This is a tips on how to contribute!
+.. Note::
+   Contribution guidelines will come soon!
