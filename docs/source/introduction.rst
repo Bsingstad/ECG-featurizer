@@ -23,6 +23,21 @@ Usage:
 + directory (str): path to the features
 + demographical_data (DataFrame): A DataFrame containing feature name, age and gender
 
+
+| project
+| ├── demo.py
+| ├── LICENCE.txt
+| ├── processes          
+| │   ├── area.py
+| │   └── bboxinout.py
+| ├── pywps.cfg          
+| ├── requirements.txt
+| ├── server.py          
+| ├── setup.py
+| ├── static
+| ├── templates
+| └── tests
+
     
 
 Input data:
