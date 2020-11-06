@@ -4,8 +4,9 @@ ECG-featurizer
 
 .. image:: /docs/source/img/ECG-featurizer_banner.png
 
-**A method to extract features from electrocardiographic recordings**
-
+A method to extract features from electrocardiographic recordings
+=================================================================
+The purpose of this package is to make tabular data from ECG-recordings by calculating many features. The package is built on WFDB [#]_ and NeuroKit2 [#]_.
 
 .. image:: https://readthedocs.org/projects/ECG-featurizer/badge/?version=latest
    :target: https://ECG-featurizer.readthedocs.io/en/latest/?badge=latest
@@ -162,8 +163,8 @@ Citation
 
 
 
-Popularity
----------------------
+Popularity:
+-----------
 
 .. image:: https://img.shields.io/pypi/dd/ECG-featurizer
         :target: https://pypi.python.org/pypi/ECG-featurizer
@@ -174,5 +175,12 @@ Popularity
 .. image:: https://img.shields.io/github/forks/ECG-featurizer/ECG-featurizer
         :target: https://github.com/ECG-featurizer/ECG-featurizer/network
 
+References:
+-----------
 
+.. [#] WFDB: https://github.com/MIT-LCP/wfdb-python
+.. [#] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
+  Schölzel, C., & S H Chen, A. (2020). NeuroKit2: A Python Toolbox for Neurophysiological
+  Signal Processing. Retrieved March 28, 2020, from https://github.com/neuropsychology/NeuroKit
+.. [#] Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215.full]; 2000 (June 13). PMID: 10851218; doi: 10.1161/01.CIR.101.23.e215
 
