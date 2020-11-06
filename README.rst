@@ -3,7 +3,7 @@ ECG-featurizer
 *****
 
 
-A python package for deriving features from ECGs
+**A method to extract features from electrocardiographic recordings**
 
 
 .. image:: https://readthedocs.org/projects/ECG-featurizer/badge/?version=latest
