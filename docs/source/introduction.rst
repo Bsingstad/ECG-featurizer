@@ -8,8 +8,8 @@ Feature name    Description
 ------------    -----------
   A             B    
 ============    ===========
- False           False
- False           True
+ gender           Patients gender
+ age              Patients age
  True            True
  True            True
 =============   ============
