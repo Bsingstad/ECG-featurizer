@@ -3,29 +3,29 @@ Introduction
 
 **Features:**
 
-+--------------+----------------------------------------------------+
-| Feature Name | Description                                        |
-+--------------+----------------------------------------------------+
-| gender       | Patients Gender                                    |
-+--------------+----------------------------------------------------+
-| age          | Patients Age                                       |
-+--------------+----------------------------------------------------+
-| R HR STD     | Heart rate standard deviation derived from R-peaks |
-+--------------+----------------------------------------------------+
-| R HR median  | Heart rate median derived from R-peaks             |
-+--------------+----------------------------------------------------+
-| R HR min     | Heart rate minimum derived from R-peaks            |
-+--------------+----------------------------------------------------+
-| R HR max     | Heart rate maximum derived from R-peaks            |
-+--------------+----------------------------------------------------+
-| R HR mean    | Heart rate mean derived from R-peaks               |
-+--------------+----------------------------------------------------+
-| RMSSD        | Heart rate variability calculated using RMSSD      |
-+--------------+----------------------------------------------------+
-| R amp II std | Standard deviation of R-peak amplitude in lead II  |
-+--------------+----------------------------------------------------+
-| R amp II min | Minimum R-peak amplitude in lead II                |
-+--------------+----------------------------------------------------+
++------------------+----------------------------------------------------+
+| **Feature Name** | **Description**                                    |
++------------------+----------------------------------------------------+
+| gender           | Patients Gender                                    |
++------------------+----------------------------------------------------+
+| age              | Patients Age                                       |
++------------------+----------------------------------------------------+
+| R HR STD         | Heart rate standard deviation derived from R-peaks |
++------------------+----------------------------------------------------+
+| R HR median      | Heart rate median derived from R-peaks             |
++------------------+----------------------------------------------------+
+| R HR min         | Heart rate minimum derived from R-peaks            |
++------------------+----------------------------------------------------+
+| R HR max         | Heart rate maximum derived from R-peaks            |
++------------------+----------------------------------------------------+
+| R HR mean        | Heart rate mean derived from R-peaks               |
++------------------+----------------------------------------------------+
+| RMSSD            | Heart rate variability calculated using RMSSD      |
++------------------+----------------------------------------------------+
+| R amp II std     | Standard deviation of R-peak amplitude in lead II  |
++------------------+----------------------------------------------------+
+| R amp II min     | Minimum R-peak amplitude in lead II                |
++------------------+----------------------------------------------------+
 
 'gender','age','R HR STD','R HR median','R HR min', 'R HR max','R HR mean','RMSSD','R amp II std','R amp II min','R amp II min_2', 'R amp leads I', 'R amp leads II', 'R amp lead III', 
                 'R amp lead aVR','R amp lead aVL','R amp lead aVF', 'R amp V1','R amp V2','R amp V3','R amp V4','R amp V5','R amp V6','p_offset_std','p_offset_median','p_offset_min','p_offset_max',
