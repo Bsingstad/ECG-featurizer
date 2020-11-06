@@ -1,6 +1,6 @@
-
+*****
 ECG-featurizer
---------------
+*****
 
 .. image:: /docs/source/img/ECG-featurizer_banner.png
 
@@ -39,8 +39,8 @@ ECG-featurizer
 
 
 
-Code Example
-------------
+Documentation:
+--------------
 
 .. code-block:: python
 
