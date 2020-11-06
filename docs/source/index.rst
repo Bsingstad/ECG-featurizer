@@ -14,7 +14,7 @@ Welcome to **ECG-featurizer**'s documentation. Here you can find information and
 .. toctree::
    :maxdepth: 2
 
-   introduction
+   Get started
    authors
    installation
    contributing
