@@ -110,8 +110,8 @@ The demographical data that is used in this function is *age* and *gender*. A Da
 | 3 | 34.0    | 1          | "A0004"         |
 +---+---------+------------+-----------------+
     
- The strings in the *filename_hr* -column should be the same as the strings in the feature array.
- In this example gender is OneHot encoded such that
+The strings in the *filename_hr* -column should be the same as the strings in the feature array.
+In this example gender is OneHot encoded such that
  .. math::
      1 = Female 
      0 = Male
@@ -125,8 +125,6 @@ To install ECG-featurizer, run this command in your terminal:
 
     pip install ECG-featurizer
 
-
-
 Contributing
 ------------
 
@@ -137,28 +135,21 @@ Contributing
 
 
 
-
-Documentation
--------------
-
-
-Tutorials
+Tutorials:
 ^^^^^^^^^^
 
 -  `A tutorial will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
 
 
 
-Other examples
-^^^^^^^^^^^^^^
+Other examples:
+^^^^^^^^^^^^^^^
 
 -  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
 
 
-
-
-Citation
----------
+Citation:
+^^^^^^^^^
 
 
 
