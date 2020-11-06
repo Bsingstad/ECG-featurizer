@@ -1,14 +1,24 @@
 *****
 Introduction
 *****
-This package is built on WFDB [#]_ and NeuroKit2 [#]_
+The purpose of this package is to make tabular data from ECG-recordings by calculating features. The package is built on WFDB [#]_ and NeuroKit2 [#]_. The package can be convenient when doing machine learning on ECG-data.
 
-
-
+Input data:
+===========
+The following input data format is supported
+ECG recording = .dat-file
++-------------------+---------------------------+
+| **Input data**    | ** suported file format** |
++===================+===========================+
+| ECG-recordings    | .dat files                |
++-------------------+---------------------------+
+| Patient meta data | .hea files                |
++-------------------+---------------------------+
 
 
 Features:
 =========
+The features that are calculated in present version is:
 
 +--------------------+--------------------+-----------------------------------------------------------------+
 |  **Index number**  |  **Feature Name**  |  **Description**                                                |
