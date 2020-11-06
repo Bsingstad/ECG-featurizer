@@ -40,7 +40,24 @@ Input data:
 
         len(labels) == len(features)
     
+**directory:**
+    A string with the path to the features. If the folder structure looks like this:
     
+    | mypath
+    | ├── ECG-recordings          
+    | │   ├── A0001.hea
+    | │   ├── A0001.dat
+    | │   ├── A0002.hea
+    | │   ├── A0002.dat
+    | │   └── Axxxx.dat
+    
+    then the feature and directory varaible could be:
+    
+.. code-block:: python
+        features[0]
+            "A0001"
+        directory
+            "./mypath/ECG-recordings/"
 
 + features (numpy array of str): an array of ECG-filenames in directory
 + labels (numpy array): an array of labels/diagnosis
