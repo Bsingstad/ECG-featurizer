@@ -8,8 +8,8 @@ Input data:
 The following input data format is supported
 ECG recording = .dat-file
 +-------------------+---------------------------+
-| **Input data**    | ** suported file format** |
-+===================+===========================+
+| **Input data**    | **Supported file format** |
++-------------------+---------------------------+
 | ECG-recordings    | .dat files                |
 +-------------------+---------------------------+
 | Patient meta data | .hea files                |
