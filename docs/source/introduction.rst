@@ -4,9 +4,9 @@ Introduction
 **Features:**
 
 =====  =====  ======
-   Feature name    Description
-----------------  ------------
-  A      B             A or B
+Feature name    Description
+------------  ------
+  A      B     A or B
 =====  =====  ======
 False  False  False
 True   False  True
