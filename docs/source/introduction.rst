@@ -79,7 +79,6 @@ Input data:
     .. math::
         1 = Female 
     and 
-    .. math:: 
         0 =  male
  
 
