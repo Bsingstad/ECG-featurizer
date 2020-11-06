@@ -18,10 +18,25 @@ Usage:
     
     
 
+Input data:
+===========
+
+**features:**
+A numpy array of ECG-recordings in directory. Each recording should have a file with the recording as a time series and one file with meta data containing information about the patient and measurement information. This is standard format for WFDB and PhysioNet-files [1]_ [#]_  
+
 + features (numpy array of str): an array of ECG-filenames in directory
 + labels (numpy array): an array of labels/diagnosis
 + directory (str): path to the features
-+ demographical_data (DataFrame): A DataFrame containing feature name, age and gender
++ demographical_data (DataFrame): A DataFrame containing feature name, age and gender   
+**Supported input files:**
+
++-------------------+---------------------------+
+| **Input data**    | **Supported file format** |
++-------------------+---------------------------+
+| ECG-recordings    | .dat files                |
++-------------------+---------------------------+
+| Patient meta data | .hea files                |
++-------------------+---------------------------+
 
 
 | project
@@ -37,22 +52,6 @@ Usage:
 | ├── static
 | ├── templates
 | └── tests
-
-    
-
-Input data:
-===========
-**Supported input files:**
-
-+-------------------+---------------------------+
-| **Input data**    | **Supported file format** |
-+-------------------+---------------------------+
-| ECG-recordings    | .dat files                |
-+-------------------+---------------------------+
-| Patient meta data | .hea files                |
-+-------------------+---------------------------+
-
-
 
 Features:
 =========
@@ -293,3 +292,4 @@ References:
 .. [#] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
   Schölzel, C., & S H Chen, A. (2020). NeuroKit2: A Python Toolbox for Neurophysiological
   Signal Processing. Retrieved March 28, 2020, from https://github.com/neuropsychology/NeuroKit
+.. [#] Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215.full]; 2000 (June 13). PMID: 10851218; doi: 10.1161/01.CIR.101.23.e215
