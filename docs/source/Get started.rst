@@ -1,5 +1,5 @@
 *****
-Introduction
+Get started
 *****
 The purpose of this package is to make tabular data from ECG-recordings by calculating features. The package is built on WFDB [#]_ and NeuroKit2 [#]_. The package can be convenient when doing machine learning on ECG-data.
 
