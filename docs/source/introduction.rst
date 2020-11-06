@@ -24,12 +24,7 @@ Input data:
 **features:**
 A numpy array of ECG-recordings in directory. Each recording should have a file with the recording as a time series and one file with meta data containing information about the patient and measurement information. This is standard format for WFDB and PhysioNet-files [1]_ [#]_  
 
-+ features (numpy array of str): an array of ECG-filenames in directory
-+ labels (numpy array): an array of labels/diagnosis
-+ directory (str): path to the features
-+ demographical_data (DataFrame): A DataFrame containing feature name, age and gender   
-**Supported input files:**
-
+Supported input files:
 +-------------------+---------------------------+
 | **Input data**    | **Supported file format** |
 +-------------------+---------------------------+
@@ -37,6 +32,14 @@ A numpy array of ECG-recordings in directory. Each recording should have a file 
 +-------------------+---------------------------+
 | Patient meta data | .hea files                |
 +-------------------+---------------------------+
+
+**labels:**
+A numpy array of labels / diagnoses for each 
+
++ features (numpy array of str): an array of ECG-filenames in directory
++ labels (numpy array): an array of labels/diagnosis
++ directory (str): path to the features
++ demographical_data (DataFrame): A DataFrame containing feature name, age and gender   
 
 
 | project
