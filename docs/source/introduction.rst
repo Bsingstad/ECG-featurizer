@@ -239,5 +239,7 @@ Features:
 +--------------------+--------------------+-----------------------------------------------------------------+
 
 
-.. [#] This is the first one.
-.. [#] This is the second one.
+.. [#] https://github.com/MIT-LCP/wfdb-python
+.. [#] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
+  Schölzel, C., & S H Chen, A. (2020). NeuroKit2: A Python Toolbox for Neurophysiological
+  Signal Processing. Retrieved March 28, 2020, from https://github.com/neuropsychology/NeuroKit
