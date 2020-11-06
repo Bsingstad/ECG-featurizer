@@ -52,7 +52,13 @@ Code Example
     # Preprocess the data (filter, find peaks, etc.)
     My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
 
-
+    +-------------------+---------------------------+
+    | **Input data**    | **Supported file format** |
+    +-------------------+---------------------------+
+    | ECG-recordings    | .dat files                |
+    +-------------------+---------------------------+
+    | Patient meta data | .hea files                |
+    +-------------------+---------------------------+
 
 Installation
 -------------
