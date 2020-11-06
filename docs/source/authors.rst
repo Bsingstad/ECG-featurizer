@@ -9,4 +9,4 @@ Developer
 Contributors
 -------------
 
-Do you want to be the first contributer to this project? Take a look at `these guides <https://neurokit2.readthedocs.io/en/latest/contributing/index.html>`_). or send me a `mail <bjorn_sing@hotmail.com>`_).
+Do you want to be the first contributer to this project? Take a look at `these guides <https://ecg-featurizer.readthedocs.io/en/latest/authors.html#contributors>`_). or send me a `mail <bjorn_sing@hotmail.com>`_).
