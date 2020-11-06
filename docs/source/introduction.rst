@@ -238,6 +238,8 @@ Features:
 | 111                | mean_t_onsets      | Mean heart rate calculated from T-onset                         |
 +--------------------+--------------------+-----------------------------------------------------------------+
 
+References:
+===========
 
 .. [#] WFDB: https://github.com/MIT-LCP/wfdb-python
 .. [#] Makowski, D., Pham, T., Lau, Z. J., Brammer, J. C., Lesspinasse, F., Pham, H.,
