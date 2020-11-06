@@ -1,6 +1,9 @@
 *****
 Introduction
 *****
+This package is built on WFDB[#]_ and NeuroKit2[#]_
+
+
 
 
 Features:
@@ -233,3 +236,7 @@ Features:
 +--------------------+--------------------+-----------------------------------------------------------------+
 | 111                | mean_t_onsets      | Mean heart rate calculated from T-onset                         |
 +--------------------+--------------------+-----------------------------------------------------------------+
+
+
+
+[#] This is the first one.
