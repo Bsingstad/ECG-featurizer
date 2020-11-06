@@ -11,10 +11,10 @@ Usage:
     from ECG-featurizer import featurize as ef
 
     # Make ECG-featurizer object
-    Feature_object =ef.get_features()
+    Feature_object = ef.get_features()
 
     # Preprocess the data (filter, find peaks, etc.)
-    My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
+    My_features = Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
     
     
 
