@@ -124,12 +124,12 @@ In this example gender is OneHot encoded such that
      0 = Male
      
 Tutorials:
-^^^^^^^^^^
+----------
 
 -  `A tutorial will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
 
 Other examples:
-^^^^^^^^^^^^^^^
+---------------
 
 -  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
        
@@ -142,13 +142,13 @@ Contributing
    :target: http://perso.crans.org/besson/LICENSE.html
 
 Citation:
-^^^^^^^^^
+---------
 
 **Citation guidelines will come**
 
 
 Popularity:
-^^^^^^^^^^^
+-----------
 
 .. image:: https://img.shields.io/pypi/dd/ECG-featurizer
         :target: https://pypi.python.org/pypi/ECG-featurizer
