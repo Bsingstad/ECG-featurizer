@@ -58,29 +58,28 @@ Input data:
             "A0001"
         directory
             "./mypath/ECG-recordings/"
+       
+**demographical_data:**
+    The demographical data that is used in this function is *age* and *gender*. A Dataframe with the following 3 columns should be passed to the featurizer() function.
+    
+    +---+---------+------------+-----------------+
+    |   | **age** | **gender** | **filename_hr** |
+    +===+=========+============+=================+
+    | 0 | 11.0    | 1          | "A0001"         |
+    +---+---------+------------+-----------------+
+    | 1 | 57.0    | 0          | "A0002"         |
+    +---+---------+------------+-----------------+
+    | 2 | 94.0    | 0          | "A0003"         |
+    +---+---------+------------+-----------------+
+    | 3 | 34.0    | 1          | "A0004"         |
+    +---+---------+------------+-----------------+
+    
+    The strings in the *filename_hr* -column should be the same as the strings in the feature array.
+    In this example gender is OneHot encoded such that :math:`1 = ` female and :math:`1 = ` male
+ 
 
-+ features (numpy array of str): an array of ECG-filenames in directory
-+ labels (numpy array): an array of labels/diagnosis
-+ directory (str): path to the features
-+ demographical_data (DataFrame): A DataFrame containing feature name, age and gender   
-
-
-| project
-| ├── demo.py
-| ├── LICENCE.txt
-| ├── processes          
-| │   ├── area.py
-| │   └── bboxinout.py
-| ├── pywps.cfg          
-| ├── requirements.txt
-| ├── server.py          
-| ├── setup.py
-| ├── static
-| ├── templates
-| └── tests
-
-Features:
-=========
+Output Features:
+================
 The features that are calculated in present version is:
 
 +--------------------+--------------------+-----------------------------------------------------------------+
