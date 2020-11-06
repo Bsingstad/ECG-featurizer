@@ -3,16 +3,16 @@ Introduction
 
 **Features:**
 
-============  ======
+======  ======
 Feature name    Description
-------------  ------
-  A      B     A or B
-============  ======
+------  ------
+  A      B    
+======  ======
  False    False
  False    True
  True     True
  True     True
-============  ======
+======  ======
 
 
 +----------------+---------------+-----------+
