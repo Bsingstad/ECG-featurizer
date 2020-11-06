@@ -38,7 +38,14 @@ The purpose of this package is to make tabular data from ECG-recordings by calcu
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
 
+Installation
+-------------
 
+To install ECG-featurizer, run this command in your terminal:
+
+.. code-block::
+
+    pip install ECG-featurizer
 
 Documentation:
 --------------
@@ -115,16 +122,17 @@ In this example gender is OneHot encoded such that
  .. math::
      1 = Female 
      0 = Male
-        
-Installation
--------------
+     
+Tutorials:
+^^^^^^^^^^
 
-To install ECG-featurizer, run this command in your terminal:
+-  `A tutorial will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
 
-.. code-block::
+Other examples:
+^^^^^^^^^^^^^^^
 
-    pip install ECG-featurizer
-
+-  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
+       
 Contributing
 ------------
 
@@ -133,29 +141,14 @@ Contributing
 .. |GPLv3 license| image:: https://img.shields.io/badge/License-GPLv3-blue.svg
    :target: http://perso.crans.org/besson/LICENSE.html
 
-
-
-Tutorials:
-^^^^^^^^^^
-
--  `A tutorial will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
-
-
-
-Other examples:
-^^^^^^^^^^^^^^^
-
--  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
-
-
 Citation:
 ^^^^^^^^^
 
-
+**Citation guidelines will come**
 
 
 Popularity:
------------
+^^^^^^^^^^^
 
 .. image:: https://img.shields.io/pypi/dd/ECG-featurizer
         :target: https://pypi.python.org/pypi/ECG-featurizer
