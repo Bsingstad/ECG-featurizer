@@ -17,16 +17,12 @@ Usage:
     My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
     
     
-        """
-        Automatically derives features from ECG-files (only .dat files for now)
-        Args:
-            features (numpy array of str): an array of ECG-filenames in directory
-            labels (numpy array): an array of labels/diagnosis
-            directory (str): path to the features
-            demographical_data (DataFrame): A DataFrame containing feature name, age and gender
-        Returns:
-            features_out (DataFrame): A DataFrame with features for all ECG-records
-        """
+
++ features (numpy array of str): an array of ECG-filenames in directory
++ labels (numpy array): an array of labels/diagnosis
++ directory (str): path to the features
++ demographical_data (DataFrame): A DataFrame containing feature name, age and gender
+
     
 
 Input data:
