@@ -3,9 +3,23 @@ Introduction
 *****
 The purpose of this package is to make tabular data from ECG-recordings by calculating features. The package is built on WFDB [#]_ and NeuroKit2 [#]_. The package can be convenient when doing machine learning on ECG-data.
 
+Usage:
+=====
+
+.. code-block:: python
+
+    from ECG-featurizer import featurize as ef
+
+    # Make ECG-featurizer object
+    Feature_object =ef.get_features()
+
+    # Preprocess the data (filter, find peaks, etc.)
+    My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
+    
+
 Input data:
 ===========
-**Supported input data:**
+**Supported input files:**
 
 +-------------------+---------------------------+
 | **Input data**    | **Supported file format** |
