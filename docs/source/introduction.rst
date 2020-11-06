@@ -4,9 +4,9 @@ Introduction
 **Features:**
 
 =====  =====  ======
-   Inputs     Output
-------------  ------
-  A      B    A or B
+   Feature name    Description
+----------------  ------------
+  A      B             A or B
 =====  =====  ======
 False  False  False
 True   False  True
@@ -16,7 +16,7 @@ True   True   True
 
 
 +----------------+---------------+-----------+
-| Feature name   | Description   | Header 3  |
+|   |    | Header 3  |
 +================+===============+===========+
 | gender | Patients gender  | column 3  |
 +--------+------------------+-----------+
