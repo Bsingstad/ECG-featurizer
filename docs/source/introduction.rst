@@ -35,7 +35,12 @@ Input data:
     +-------------------+---------------------------+
 
 **labels:**
-    A numpy array of labels / diagnoses for each ECG-recording. $2+2=4$
+    A numpy array of labels / diagnoses for each ECG-recording. The length of the labels-array should have the same length as the features-array
+.. code-block:: python
+
+        len(labels) == len(features)
+    
+    
 
 + features (numpy array of str): an array of ECG-filenames in directory
 + labels (numpy array): an array of labels/diagnosis
