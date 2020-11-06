@@ -35,7 +35,7 @@ Input data:
     +-------------------+---------------------------+
 
 **labels:**
-A numpy array of labels / diagnoses for each 
+    A numpy array of labels / diagnoses for each ECG-recording. $2+2=4$
 
 + features (numpy array of str): an array of ECG-filenames in directory
 + labels (numpy array): an array of labels/diagnosis
