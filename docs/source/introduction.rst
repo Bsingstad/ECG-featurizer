@@ -7,6 +7,7 @@ Input data:
 ===========
 The following input data format is supported
 ECG recording = .dat-file
+
 +-------------------+---------------------------+
 | **Input data**    | **Supported file format** |
 +-------------------+---------------------------+
