@@ -25,6 +25,7 @@ Input data:
 A numpy array of ECG-recordings in directory. Each recording should have a file with the recording as a time series and one file with meta data containing information about the patient and measurement information. This is standard format for WFDB and PhysioNet-files [1]_ [#]_  
 
 Supported input files:
+
 +-------------------+---------------------------+
 | **Input data**    | **Supported file format** |
 +-------------------+---------------------------+
