@@ -78,7 +78,7 @@ Input data:
     In this example gender is OneHot encoded such that
     .. math::
         1 = Female 
-        0 =  male
+        0 = Male
  
 
 Output Features:
