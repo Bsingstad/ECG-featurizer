@@ -1,6 +1,7 @@
-*****
+
 ECG-featurizer
-*****
+--------------
+
 .. image:: /docs/source/img/ECG-featurizer_banner.png
 
 **A method to extract features from electrocardiographic recordings**
@@ -36,20 +37,10 @@ ECG-featurizer
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
 
-   
-   |Github all releases|
-.. |Github all releases| image:: https://img.shields.io/github/downloads/ECG-featurizer/StrapDown.js/total.svg
-   :target: https://GitHub.com/CG-featurizer/StrapDown.js/releases/)
-
-
-   |Package Control total downloads|
-
-.. |Package Control total downloads| image:: https://img.shields.io/packagecontrol/dt/ECG-featurizer.svg
-   :target: https://packagecontrol.io/packages/ECG-featurizer
 
 
 Code Example
-------------------
+------------
 
 .. code-block:: python
 
@@ -75,7 +66,7 @@ To install ECG-featurizer, run this command in your terminal:
 
 
 Contributing
--------------
+------------
 
 |GPLv3 license|
 
@@ -86,7 +77,7 @@ Contributing
 
 
 Documentation
-----------------
+-------------
 
 
 Tutorials
@@ -97,7 +88,7 @@ Tutorials
 
 
 Other examples
-^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 -  `Some examples will come <https://github.com/ECG-featurizer/ECG-featurizer/blob/main/docs/source/index.rst>`_
 
