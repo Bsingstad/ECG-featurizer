@@ -52,10 +52,11 @@ Code Example
     # Preprocess the data (filter, find peaks, etc.)
     My_features=Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
 
-**features:**
+features:
+^^^^^^^^^
 A numpy array of ECG-recordings in directory. Each recording should have a file with the recording as a time series and one file with meta data containing information about    the patient and measurement information. This is standard format for WFDB and PhysioNet-files [1]_ [#]_  
 
-Supported input files:
+**Supported input files:**
 
  +-------------------+---------------------------+
  | **Input data**    | **Supported file format** |
@@ -65,24 +66,26 @@ Supported input files:
  | Patient meta data | .hea files                |
  +-------------------+---------------------------+
 
-**labels**
+labels:
+^^^^^^^
 A numpy array of labels / diagnoses for each ECG-recording. The length of the labels-array should have the same length as the features-array
 .. code-block:: python
 
         len(labels) == len(features)
     
-**directory:**
-    A string with the path to the features. If the folder structure looks like this:
+directory:
+^^^^^^^^^^
+A string with the path to the features. If the folder structure looks like this:
     
-    | mypath
-    | ├── ECG-recordings          
-    | │   ├── A0001.hea
-    | │   ├── A0001.dat
-    | │   ├── A0002.hea
-    | │   ├── A0002.dat
-    | │   └── Axxxx.dat
+ | mypath
+ | ├── ECG-recordings          
+ | │   ├── A0001.hea
+ | │   ├── A0001.dat
+ | │   ├── A0002.hea
+ | │   ├── A0002.dat
+ | │   └── Axxxx.dat
     
-    then the feature and directory varaible could be:
+then the feature and directory varaible could be:
     
 .. code-block:: python
         features[0]
@@ -90,26 +93,27 @@ A numpy array of labels / diagnoses for each ECG-recording. The length of the la
         directory
             "./mypath/ECG-recordings/"
        
-**demographical_data:**
-    The demographical data that is used in this function is *age* and *gender*. A Dataframe with the following 3 columns should be passed to the featurizer() function.
+demographical_data:
+^^^^^^^^^^^^^^^^^^^
+The demographical data that is used in this function is *age* and *gender*. A Dataframe with the following 3 columns should be passed to the featurizer() function.
     
-    +---+---------+------------+-----------------+
-    |   | **age** | **gender** | **filename_hr** |
-    +===+=========+============+=================+
-    | 0 | 11.0    | 1          | "A0001"         |
-    +---+---------+------------+-----------------+
-    | 1 | 57.0    | 0          | "A0002"         |
-    +---+---------+------------+-----------------+
-    | 2 | 94.0    | 0          | "A0003"         |
-    +---+---------+------------+-----------------+
-    | 3 | 34.0    | 1          | "A0004"         |
-    +---+---------+------------+-----------------+
++---+---------+------------+-----------------+
+|   | **age** | **gender** | **filename_hr** |
++===+=========+============+=================+
+| 0 | 11.0    | 1          | "A0001"         |
++---+---------+------------+-----------------+
+| 1 | 57.0    | 0          | "A0002"         |
++---+---------+------------+-----------------+
+| 2 | 94.0    | 0          | "A0003"         |
++---+---------+------------+-----------------+
+| 3 | 34.0    | 1          | "A0004"         |
++---+---------+------------+-----------------+
     
-    The strings in the *filename_hr* -column should be the same as the strings in the feature array.
-    In this example gender is OneHot encoded such that
-    .. math::
-        1 = Female 
-        0 = Male
+ The strings in the *filename_hr* -column should be the same as the strings in the feature array.
+ In this example gender is OneHot encoded such that
+ .. math::
+     1 = Female 
+     0 = Male
         
 Installation
 -------------
