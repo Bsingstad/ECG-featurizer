@@ -1,6 +1,7 @@
 import numpy as np
 import wfdb
 import neurokit2 as nk
+import plotly.graph_objects as go
 
 class get_features:
 
@@ -9,6 +10,7 @@ class get_features:
         self.features_out = None
         self.files_for_manual_annotation = None
         self.labels_for_manual_annotation = None
+        self.dir = None
 
 
 
@@ -92,7 +94,7 @@ class get_features:
             s_peaks = np.delete(s_peaks,np.where(np.isnan(s_peaks))[0]).astype(int) # not use
             return q_peaks, s_peaks
 
-
+        self.dir = directory
         voltage_res = 1
         feature_array = np.zeros((labels.shape[0],112))
         counter_all = 0
@@ -305,4 +307,32 @@ class get_features:
         return self.features_out, 
 
     def manual_annotation(self):
-        pass_hash = input("Enter md5 hash: ")
+        
+        def _read_directory_data(ecg_file , directory):
+            ecg_data, header_data =  wfdb.rdsamp(directory + ecg_file)
+            samplefreq = header_data['fs']
+            n_signal = header_data['n_sig']
+            signal_len = header_data['sig_len']
+            ecg_data = ecg_data.T
+            return ecg_data, samplefreq, n_signal, signal_len
+        
+        unannotated_iter = self.files_for_manual_annotation
+        print(unannotated_iter)
+        
+        for unannotated in unannotated_iter:
+            ecgdata, fs, leads, sig_len = _read_directory_data(unannotated,self.dir)
+            signal_length = np.arange(len(ecgdata))
+
+            # Create traces
+            fig = go.Figure()
+            fig.add_trace(go.Scatter(x=signal_length, y=ecgdata[1],
+                        mode='lines',
+                        name='lines'))
+            fig.show()
+            pass_hash = input("Annotate: ")
+
+
+        
+
+
+
