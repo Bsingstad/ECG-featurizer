@@ -37,6 +37,9 @@ The purpose of this package is to make tabular data from ECG-recordings by calcu
 .. image:: http://www.repostatus.org/badges/latest/active.svg
    :alt: Project Status: Active - The project has reached a stable, usable state and is being actively developed.
    :target: http://www.repostatus.org/#active
+   
+.. image:: https://zenodo.org/badge/308713553.svg
+   :target: https://zenodo.org/badge/latestdoi/308713553
 
 Installation
 -------------
