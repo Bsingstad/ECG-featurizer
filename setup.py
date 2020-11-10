@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="ECG-featurizer", # Replace with your own username
-    version="0.0.8",
+    version="0.0.9",
     author="Bjørn-Jostein Singstad",
     author_email="bjorn_sing@hotmail.com",
     description="This Python package recognize patterns in an ECG and derives features",
@@ -15,7 +15,8 @@ setuptools.setup(
     install_requires = [
         'neurokit2 >= 0.0.41',
         'numpy >= 1.19.0',
-        'wfdb >= 3.1.1'
+        'wfdb >= 3.1.1',
+        'pandas >= 1.0.5'
     ],
     packages=setuptools.find_packages(),
     classifiers=[

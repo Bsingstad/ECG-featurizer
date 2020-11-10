@@ -2,6 +2,7 @@ import numpy as np
 import wfdb
 import neurokit2 as nk
 import plotly.graph_objects as go
+import pandas as pd
 
 class get_features:
 
