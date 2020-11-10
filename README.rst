@@ -1,6 +1,6 @@
-*****
+**************
 ECG-featurizer
-*****
+**************
 
 .. image:: /docs/source/img/ECG-featurizer_banner.png
 
@@ -98,11 +98,12 @@ A string with the path to the features. If the folder structure looks like this:
     
 then the feature and directory varaible could be:
     
-.. code-block:: python
-        features[0]
-            "A0001"
-        directory
-            "./mypath/ECG-recordings/"
+
+features[0]
+"A0001"
+   
+directory
+"./mypath/ECG-recordings/"
        
 demographical_data:
 ^^^^^^^^^^^^^^^^^^^
@@ -122,9 +123,9 @@ The demographical data that is used in this function is *age* and *gender*. A Da
     
 The strings in the *filename_hr* -column should be the same as the strings in the feature array.
 In this example gender is OneHot encoded such that
- .. math::
-     1 = Female 
-     0 = Male
+
+1 = Female 
+0 = Male
      
 Tutorials:
 ----------
