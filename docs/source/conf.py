@@ -23,7 +23,7 @@ copyright = '2020, Bjørn-Jostein Singstad'
 author = 'Bjørn-Jostein Singstad'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.5'
+release = '0.1.2'
 
 
 # -- General configuration ---------------------------------------------------

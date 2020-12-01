@@ -6,17 +6,34 @@ The purpose of this package is to make tabular data from ECG-recordings by calcu
 Usage:
 =====
 
+Featurize .dat-files:
+^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: python
 
-    from ECG-featurizer import featurize as ef
+    from ECGfeaturizer import featurize as ef
 
     # Make ECG-featurizer object
-    Feature_object = ef.get_features()
+    Feature_object =ef.get_features()
 
     # Preprocess the data (filter, find peaks, etc.)
-    My_features = Feature_object.featurizer(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
-    
-    
+    My_features=Feature_object.featurizer_dat(features=ecg_filenames,labels=labels,directory="./data/",demographical_data=demo_data)
+
+Featurize .mat-files:
+^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    from ECGfeaturizer import featurize as ef
+
+    number_of_ECGs = <the amount of ECGs>
+    directory = "<your dir>"
+
+    # Make ECG-featurizer object
+    Feature_object =ef.get_features()
+
+    # Preprocess the data (filter, find peaks, etc.)
+    My_features=Feature_object.featurizer_mat(num_features=number_of_ECGs, mat_dir = directory)
 
 Input data:
 ===========

@@ -5,10 +5,10 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="ECG-featurizer", # Replace with your own username
-    version="0.0.9",
+    version="0.1.2",
     author="Bjørn-Jostein Singstad",
     author_email="bjorn_sing@hotmail.com",
-    description="This Python package recognize patterns in an ECG and derives features",
+    description="This Python package recognize patterns in an ECG and extract features",
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url="https://github.com/ECG-featurizer/ECG-featurizer",
@@ -24,5 +24,5 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.8',
+    python_requires='>=3.6',
 )
