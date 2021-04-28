@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="ECG-featurizer", # Replace with your own username
-    version="0.1.2",
+    version="1.0.0",
     author="Bjørn-Jostein Singstad",
     author_email="bjorn_sing@hotmail.com",
     description="This Python package recognize patterns in an ECG and extract features",

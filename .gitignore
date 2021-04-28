@@ -3,3 +3,7 @@
 *dist/
 *build/
 *ECG_featurizer.egg-info
+*ptbxl_database
+*Test_notebook.ipynb
+*Develop new version.ipynb
+*ipynb_checkpoints/
