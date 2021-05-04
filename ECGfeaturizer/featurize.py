@@ -269,6 +269,7 @@ class get_features:
                 t_peaks = np.where(temp_data['ECG_T_Peaks']==1)[0]
                 p_onset = np.where(temp_data['ECG_P_Onsets']==1)[0]
                 t_offset = np.where(temp_data['ECG_T_Offsets']==1)[0]
+                clean_rec = temp_data['ECG_Clean']
 
                 analysis = True
             except:
