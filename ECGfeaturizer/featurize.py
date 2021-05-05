@@ -80,7 +80,11 @@ class get_features:
             analysis = True
         except:
             analysis = False
-            r_peaks = float("nan")
+            r_peaks = np.array([1,2])
+            p_peaks = np.array([1,2])
+            q_peaks = np.array([1,2])
+            s_peaks = np.array([1,2])
+            t_peaks = np.array([1,2])
 
         
         if self.rpeak_int == True:
@@ -258,7 +262,8 @@ class get_features:
         
         feature_list = []
         feature_name = []
-        
+
+
         if len(r_peaks) and len(q_peaks) and len(s_peaks) and len(p_peaks) and len(t_peaks) < 3:
             try:
                 temp_data = nk.ecg_process(recording,sample_freq)[0]
@@ -274,22 +279,44 @@ class get_features:
                 analysis = True
             except:
                 analysis = False
-                r_peaks = float("nan")
+                r_peaks = np.array([1,2])
+                p_peaks = np.array([1,2])
+                q_peaks = np.array([1,2])
+                s_peaks = np.array([1,2])
+                t_peaks = np.array([1,2])
         
         else:
             analysis = True
             clean_rec = nk.ecg_clean(recording)
-            
-            r_peaks = processing.peaks.correct_peaks(clean_rec, r_peaks, search_radius=25, 
+            try:
+                r_peaks = processing.peaks.correct_peaks(clean_rec, r_peaks, search_radius=25, 
                                                      smooth_window_size=7, peak_dir='compare')
-            q_peaks = processing.peaks.correct_peaks(clean_rec, q_peaks, search_radius=25, 
+            except:
+                r_peaks = r_peaks
+            
+            try:
+                q_peaks = processing.peaks.correct_peaks(clean_rec, q_peaks, search_radius=25, 
                                                       smooth_window_size=7, peak_dir='compare')
-            s_peaks = processing.peaks.correct_peaks(clean_rec, s_peaks, search_radius=25, 
+            except:
+                q_peaks = q_peaks
+            
+            try:
+                s_peaks = processing.peaks.correct_peaks(clean_rec, s_peaks, search_radius=25, 
                                                           smooth_window_size=7, peak_dir='compare')
-            t_peaks = processing.peaks.correct_peaks(clean_rec, t_peaks, search_radius=25, 
+            except:
+                s_peaks = s_peaks
+
+            try:
+                t_peaks = processing.peaks.correct_peaks(clean_rec, t_peaks, search_radius=25, 
                                                               smooth_window_size=7, peak_dir='compare')
-            p_peaks = processing.peaks.correct_peaks(clean_rec, p_peaks, search_radius=25, 
+            except:
+                t_peaks = t_peaks
+            
+            try:
+                p_peaks = processing.peaks.correct_peaks(clean_rec, p_peaks, search_radius=25, 
                                                               smooth_window_size=7, peak_dir='compare')
+            except:
+                p_peaks = p_peaks
             
 
         
@@ -431,4 +458,4 @@ class get_features:
         feature_list = np.asarray(feature_list)
         feature_name = np.asarray(feature_name)
          
-        return feature_list,feature_name
+        return feature_list,feature_name, [p_peaks,q_peaks,r_peaks,s_peaks,t_peaks]
