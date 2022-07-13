@@ -29,7 +29,7 @@ class get_features:
         if return_sequence == True:
             return r_peaks
         else:
-            
+            return self._calc_mean_and_std(r_peaks)
 
     def featurize_ecg(self, recording, sample_freq):
         """
