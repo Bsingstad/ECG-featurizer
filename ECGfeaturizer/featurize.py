@@ -9,28 +9,27 @@ from wfdb import processing
 
 class get_features:
 
-    def __init__(self, r_peak = True, r_int = True, p_peak = True, p_int = True, t_peak = True, t_int = True, q_peak = True, q_int= True, s_peak = True, s_int = True, qrs_dur= True, qt_dur = True, pr_dur = True):
-        #elf.X_matrix = None
-        self.rpeak_int = r_int
-        self.ppeak_int = p_int
-        self.tpeak_int = t_int
-        self.qpeak_int = q_int
-        self.speak_int = s_int
-        
-        
-        
-        self.rpeak_amp = r_peak
-        self.ppeak_amp = p_peak
-        self.tpeak_amp = t_peak
-        self.qpeak_amp = q_peak
-        self.speak_amp = s_peak
-        
-        self.qrs_duration = qrs_dur
-        self.qt_duration = qt_dur
-        self.pr_duration = pr_dur
+    def __init__(self, ecg_waveform, sample_frequency):
+        self.ecg_waveform = ecg_waveform
+        self.sample_frequency = sample_frequency
 
-        self.files_for_manual_annotation = []
-        self.labels_for_manual_annotation = None
+
+
+    def get_nk_data(self):
+        self.nk_data = nk.ecg_process(self.ecg_waveform,self.sample_frequency)[0]
+
+    @staticmethod
+    def _calc_mean_and_std(sequence):
+        return sequence.mean(), sequence.std()
+
+    
+    def return_r_peaks(self, return_sequence=False):
+        r_peaks = np.where(self.nk_data['ECG_R_Peaks']==1)[0]
+        r_peaks = np.diff(r_peaks)/self.sample_frequency
+        if return_sequence == True:
+            return r_peaks
+        else:
+            
 
     def featurize_ecg(self, recording, sample_freq):
         """
@@ -268,22 +267,29 @@ class get_features:
             try:
                 temp_data = nk.ecg_process(recording,sample_freq)[0]
                 r_peaks = np.where(temp_data['ECG_R_Peaks']==1)[0]
+
                 p_peaks = np.where(temp_data['ECG_P_Peaks']==1)[0]
+
                 q_peaks = np.where(temp_data['ECG_Q_Peaks']==1)[0]
+
                 s_peaks = np.where(temp_data['ECG_S_Peaks']==1)[0]
+
                 t_peaks = np.where(temp_data['ECG_T_Peaks']==1)[0]
+
                 p_onset = np.where(temp_data['ECG_P_Onsets']==1)[0]
+
                 t_offset = np.where(temp_data['ECG_T_Offsets']==1)[0]
+                
                 clean_rec = temp_data['ECG_Clean']
 
                 analysis = True
             except:
                 analysis = False
-                r_peaks = np.array([1,2])
-                p_peaks = np.array([1,2])
-                q_peaks = np.array([1,2])
-                s_peaks = np.array([1,2])
-                t_peaks = np.array([1,2])
+                r_peaks = np.array([1,2,3])
+                p_peaks = np.array([1,2,3])
+                q_peaks = np.array([1,2,3])
+                s_peaks = np.array([1,2,3])
+                t_peaks = np.array([1,2,3])
         
         else:
             analysis = True
